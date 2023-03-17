@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style-login.css" />
+    <script src="script.js" defer="true"></script>
+  </head>
+  <body style=" ">
+    <header class="header">
+      <div class="header__content">
+        <a class="header__logo" href="index.html">
+          <strong>HOME</strong>
+        </a>
+        <ul class="header__menu">
+          <li><a href="#">Cibo</a></li>
+          <li><a href="#">Cacca</a></li>
+          <!-- <li><a href="#">Pipi</a></li> -->
+          <li><a href="#">Culo</a></li>
+          <li><a href="support.html">Supporto</a></li>
+        </ul>
+        <div class="header__quick">
+          <a href="#">Accedi</a>
+          <div class="icon-hamburger">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="spacer"></div>
+
+    <div class="container">
+      <div class="wrapper">
+        <div class="title"><span>Login Form</span></div>
+        <form action="#">
+          <div class="row">
+            <i class="fas fa-user"></i>
+            <input type="email" placeholder="Email or Phone" required />
+          </div>
+          <div class="row">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Password" required />
+          </div>
+          <div class="hidden">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Nome" required />
+          </div>
+          <div class="hidden">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Cognome" required />
+          </div>
+          <div class="hidden">
+            <i class="fas fa-user"></i>
+            <input type="date" placeholder="Data di nascita" required />
+          </div>
+          <div class="pass"><a href="support.html">Forgot password?</a></div>
+          <div class="row button">
+            <input type="submit" value="Login" />
+          </div>
+          <div class="signup-link">
+            Not a member? <a href="#" id="subNow">Signup now</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <script>
+      let item = document.querySelector(".icon-hamburger");
+      item.addEventListener("click", function () {
+        document.body.classList.toggle("menu-open");
+      });
+    </script>
+
+    <script>
+      /* js code */
+    </script>
+  </body>
+</html>
